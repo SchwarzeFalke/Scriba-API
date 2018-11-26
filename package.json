@@ -1,0 +1,29 @@
+{
+  "name": "Scriba-API",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SchwarzeFalke/Scriba-API.git"
+  },
+  "keywords": [],
+  "author": "Carlos Vara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SchwarzeFalke/Scriba-API/issues"
+  },
+  "homepage": "https://github.com/SchwarzeFalke/Scriba-API#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.3.13",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  }
+}
