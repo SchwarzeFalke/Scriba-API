@@ -2,7 +2,7 @@
  * @Author: schwarze_falke
  * @Date:   2018-11-26T16:16:31-06:00
  * @Last modified by:   schwarze_falke
- * @Last modified time: 2018-11-26T20:40:52-06:00
+ * @Last modified time: 2018-11-26T21:00:23-06:00
  */
 const express = require('express');
 const router = express.Router();
@@ -30,8 +30,9 @@ router.get('/notes', async (req, res) => {
  * Retrieves a single note from its ID
  */
 router.get('/notes/:id', async (req, res) => {
-  const notes = await Note.find();
-  res.send(notes);
+  const { id } = req.params;
+  const note = await Note.findById(id);
+  res.send(note);
 });
 
 /*
@@ -40,6 +41,14 @@ router.get('/notes/:id', async (req, res) => {
 router.get('/delete/:id', async (req, res) => {
   const { id } = req.params;
   await Note.deleteOne( {_id: id} );
+});
+
+/*
+ * Updates a note from the DB
+ */
+router.post('/edit/:id', async (req, res) => {
+  const { id } = req.params;
+  await Note.update({_id: id}, req.body);
 });
 
 /*
