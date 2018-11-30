@@ -1,6 +1,6 @@
 # Scriba-API
 
-　　　　　　　　　　　　　　![alt-text](https://i.imgur.com/8Sw09GT.png)
+　　　　　　　　　　　　![alt-text](https://i.imgur.com/8Sw09GT.png)
 
 ## Description
 Scriba is the minimalistic app for notes. With a simple account you can store all the notes you want; store them by date & read it whenever you want!
