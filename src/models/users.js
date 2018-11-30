@@ -2,7 +2,7 @@
  * @Author: schwarze_falke
  * @Date:   2018-11-26T19:24:15-06:00
  * @Last modified by:   schwarze_falke
- * @Last modified time: 2018-11-26T22:52:42-06:00
+ * @Last modified time: 2018-11-28T11:43:31-06:00
  */
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
@@ -17,7 +17,6 @@ const Schema = mongoose.Schema;
 const UserSchema = new Schema({
   userName: String,  // String datatype
   pass: String,
-  email: String,
 });
 
 /* Module exportation of the schema */
